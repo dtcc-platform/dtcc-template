@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "dtcc-package-test"
+version = "0.1.0"
+description = ""
+authors = ["Anders Logg <logg@chalmers.se>"]
+readme = "README.md"
+packages = [{include = "dtcc_package_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
