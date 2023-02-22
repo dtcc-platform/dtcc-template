@@ -1,15 +1,30 @@
-[tool.poetry]
-name = "dtcc-package-test"
-version = "0.1.0"
-description = ""
-authors = ["Anders Logg <logg@chalmers.se>"]
-readme = "README.md"
-packages = [{include = "dtcc_package_test"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["scikit-build-core", "pybind11"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "dtcc-package-template"
+version = "0.0.1"
+description="DTCC Package Template"
+readme = "README.md"
+authors = [
+  { name = "Anders Logg", email = "logg@chalmers.se" },
+  { name = "Vasilis Naserentin", email = "vasilis.naserentin@chalmers.se" }
+]
+requires-python = ">=3.7"
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: C++",
+  "License :: OSI Approved :: MIT License"
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.scikit-build]
+wheel.expand-macos-universal-tags = true
+
+[tool.cibuildwheel]
+test-command = "pytest {project}/tests"
+build-verbosity = 1
