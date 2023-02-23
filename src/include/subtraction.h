@@ -9,4 +9,4 @@ int sub(int i, int j)
     return i - j;
 }
 
-#endif
+#endif //DTCC_SUBTRACTION_H
