@@ -1,6 +1,11 @@
 # DTCC Package Template
 
-This is a template for creating Python packages as part of DTCC Platform.
+This is a template for a clean and simple design of Python packages that include
+C++ code. Highlights:
+
+* Uses `pyproject.toml` and installable using `pip install`
+* Uses `scikit_build_core` as build backend
+* C++ extensions built via `CMake` and `CMakeLists.txt`
 
 This project is part the
 [Digital Twin Platform (DTCC Platform)](https://gitlab.com/dtcc-platform)
