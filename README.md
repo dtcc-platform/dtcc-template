@@ -1,7 +1,9 @@
 # DTCC Package Template
 
 DTCC Package Template is a template for creating clean and simple
-Python packages that include C++ code. Highlights:
+Python packages that include C++ code.
+
+Highlights:
 
 * Uses `pyproject.toml` and installable using `pip install`
 * Uses `scikit_build_core` as build backend
