@@ -9,4 +9,4 @@ int add(int i, int j)
     return i + j;
 }
 
-#endif
+#endif // DTCC_ADDITION_H
