@@ -19,6 +19,9 @@ classifiers = [
   "License :: OSI Approved :: MIT License"
 ]
 
+[project.scripts]
+dtcc-package-template-main = "dtcc_package_template:main.main"
+
 [project.optional-dependencies]
 test = ["pytest"]
 
