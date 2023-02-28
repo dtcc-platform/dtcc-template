@@ -1,5 +1,5 @@
 [build-system]
-requires = ["scikit-build-core", "pybind11"]
+requires = ["scikit-build-core", "pybind11==2.10.*"]
 build-backend = "scikit_build_core.build"
 
 [project]
@@ -11,19 +11,22 @@ authors = [
   { name = "Anders Logg", email = "logg@chalmers.se" },
   { name = "Vasilis Naserentin", email = "vasilis.naserentin@chalmers.se" }
 ]
-requires-python = ">=3.7"
+requires-python = ">=3.8"
 classifiers = [
   "Intended Audience :: Science/Research",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: C++",
   "License :: OSI Approved :: MIT License"
 ]
-
-[project.scripts]
-dtcc-package-template-main = "dtcc_package_template:main.main"
+dependencies = [
+ "pybind11 >= 2.10.0, < 2.11.0"
+]
 
 [project.optional-dependencies]
 test = ["pytest"]
+
+[project.scripts]
+dtcc-package-template-main = "dtcc_package_template:main.main"
 
 [tool.scikit-build]
 wheel.expand-macos-universal-tags = true
