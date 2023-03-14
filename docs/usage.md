@@ -11,13 +11,13 @@ Python code should go into the directory
 
     src/package_name/
 
-C++ code should go into directory
+C++ header files should go into directory
 
     src/include/
 
 Python bindings for the C++ code should go into the file
 
-    src/bindings.cpp
+    src/cpp/bindings.cpp
 
 Python scripts should  go into the directory
 
