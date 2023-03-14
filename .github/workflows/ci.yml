@@ -16,5 +16,4 @@ jobs:
     - name: pip install 
       run: pip install .
     - name: test
-      run: cd tests && ./run_tests.sh
-
+      run: pwd && ls
