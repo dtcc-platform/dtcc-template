@@ -1,4 +1,4 @@
-name: Test CI
+name: CI
 
 on:
   push:
@@ -15,5 +15,5 @@ jobs:
     - uses: actions/checkout@v3
     - name: pip install 
       run: pip install .
-    - name: test
-      run: pwd && ls && cd tests && sh run-tests.sh
+    - name: run tests
+      run: cd tests && sh run-tests.sh
