@@ -16,5 +16,5 @@ jobs:
     - name: pip install 
       run: pip install .
     - name: test
-      run: ./tests/run_tests.sh
+      run: cd tests && ./run_tests.sh
 
