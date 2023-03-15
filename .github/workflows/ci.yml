@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: pip install 
+    - name: pip install
       run: pip install .
     - name: run tests
-      run: cd tests && sh run-tests.sh
+      run: cd tests && sh run-tests
