@@ -1,6 +1,6 @@
-# DTCC Package Template
+# DTCC Template
 
-DTCC Package Template is a template for creating clean and simple
+DTCC Template is a template for creating clean and simple
 Python packages that include C++ code.
 
 Highlights:
