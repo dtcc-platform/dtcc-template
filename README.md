@@ -29,7 +29,7 @@ supported by Sweden’s Innovation Agency Vinnova under Grant No. 2019-421 00041
 
 ## License
 
-DTCC Package Template is licensed under the
+DTCC Template is licensed under the
 [MIT license](https://opensource.org/licenses/MIT).
 
 Copyright is held by the individual authors as listed at the top of

@@ -3,9 +3,9 @@ requires = ["scikit-build-core", "pybind11==2.10.*"]
 build-backend = "scikit_build_core.build"
 
 [project]
-name = "dtcc-package-template"
+name = "dtcc-template"
 version = "0.0.1"
-description="DTCC Package Template"
+description="DTCC Template"
 readme = "README.md"
 authors = [
   { name = "Anders Logg", email = "logg@chalmers.se" },
@@ -26,7 +26,7 @@ dependencies = [
 test = ["pytest"]
 
 [project.scripts]
-dtcc-package-template-main = "dtcc_package_template.scripts:main.main"
+dtcc-template-main = "dtcc_template.scripts:main.main"
 
 [tool.scikit-build]
 wheel.expand-macos-universal-tags = true

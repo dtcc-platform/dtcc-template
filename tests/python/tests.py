@@ -1,5 +1,5 @@
 import unittest
-from dtcc_package_template import *
+from dtcc_template import *
 
 
 class TestPythonCode(unittest.TestCase):
