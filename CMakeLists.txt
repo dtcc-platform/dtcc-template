@@ -53,9 +53,5 @@ set(CMAKE_SKIP_INSTALL_ALL_DEPENDENCY true)
 
 add_subdirectory(src)
 
-pybind11_add_module(_bindings MODULE ${CMAKE_SOURCE_DIR}/src/cpp/bindings.cpp)
-target_compile_definitions(_bindings PRIVATE VERSION_INFO=${PROJECT_VERSION})
-install(TARGETS _bindings DESTINATION dtcc_template)
-
 # Add tests
 # ADD_SUBDIRECTORY(tests/cpp)
